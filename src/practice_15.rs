@@ -1,4 +1,4 @@
-[#test]
+
 fn gray(n: u8) -> Vec<String> {
     let mut result = Vec::new();
     

@@ -1,4 +1,4 @@
-[#test]
+
 fn rotate(s: String, n: isize) -> String {
     let len = s.len() as isize;
     

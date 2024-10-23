@@ -1,4 +1,4 @@
-[#test]
+
 const WIDTH: usize = 30;  
 const HEIGHT: usize = 16; 
 

@@ -1,4 +1,4 @@
-[#test]
+
 fn main() {
     const SIZE: usize = 6; 
 

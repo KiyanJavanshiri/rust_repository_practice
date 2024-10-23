@@ -1,4 +1,4 @@
-[#test]
+
 fn is_prime(n: u64) -> bool {
     if n < 2 {
         return false;
@@ -14,7 +14,7 @@ fn is_prime(n: u64) -> bool {
 }
 
 fn main() {
-    let number = 30; // Число для перевірки
+    let number = 30; 
     if is_prime(number) {
         println!("{} є простим числом.", number);
     } else {

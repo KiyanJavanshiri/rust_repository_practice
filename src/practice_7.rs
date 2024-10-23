@@ -1,4 +1,4 @@
-[#test]
+
 use std::iter;
 
 fn draw_triangle(base_width: usize, max_width: usize) {

@@ -1,4 +1,4 @@
-[#test]
+
 use std::collections::HashSet;
 
 fn find_numbers() {

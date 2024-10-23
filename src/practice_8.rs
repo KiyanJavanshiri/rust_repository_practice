@@ -1,4 +1,4 @@
-[#test]
+
 fn swap_case(input: &str) -> String {
     input
         .chars()
