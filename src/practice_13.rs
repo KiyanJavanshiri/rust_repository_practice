@@ -1,3 +1,4 @@
+[#test]
 fn count_permutation(shipments: &Vec<u32>) -> usize {
     let total_weight: u32 = shipments.iter().sum();
     let n = shipments.len() as u32;

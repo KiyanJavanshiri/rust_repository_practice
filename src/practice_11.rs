@@ -1,3 +1,4 @@
+[#test]
 fn is_palindrome(n: u64) -> bool {
     let original = n.to_string();
     let reversed: String = original.chars().rev().collect();

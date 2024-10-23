@@ -1,4 +1,4 @@
-#[test]
+[#test]
 fn rhombus() {
     const SIZE: usize = 6; 
 
