@@ -28,3 +28,4 @@ fn rhombus() {
         println!(); 
     }
 }
+// commit test
