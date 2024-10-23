@@ -44,7 +44,7 @@ fn gen_shipments(n: usize) -> Vec<u32> {
     (0..n).map(|_| weight_per_ship).collect()
 }
 
-fn check_shipments() {
+fn main() {
     let shipments = vec![8, 2, 2, 4, 4]; 
 
     let transfers = count_permutation(&shipments);

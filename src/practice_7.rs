@@ -26,7 +26,7 @@ fn draw_tree(triangles: usize) {
     }
 }
 
-fn check_tree() {
+fn main() {
     let triangles = 5; 
     draw_tree(triangles);
 }

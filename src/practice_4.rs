@@ -1,5 +1,5 @@
 [#test]
-fn rhombus() {
+fn main() {
     const SIZE: usize = 6; 
 
   

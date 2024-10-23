@@ -14,7 +14,7 @@ fn swap_case(input: &str) -> String {
         .collect()
 }
 
-fn check_swap_case() {
+fn main() {
     let text = "Hello, World!";
     let swapped_text = swap_case(text);
     println!("Original: {}", text);

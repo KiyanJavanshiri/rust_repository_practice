@@ -33,7 +33,7 @@ fn print_vector(data: &[i32]) {
     println!("Вектор: {:?}", data);
 }
 
-fn check_vector() {
+fn main() {
     let random_vector = gen_random_vector(20);
     print_vector(&random_vector);
     

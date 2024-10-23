@@ -17,7 +17,7 @@ fn rotate(s: String, n: isize) -> String {
     rotated
 }
 
-fn check_rotate() {
+fn main() {
     let s = String::from("abcdef");
     let rotated = rotate(s.clone(), 2); 
     println!("Rotated right: {}", rotated);

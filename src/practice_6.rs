@@ -7,7 +7,7 @@ fn gcd(mut a: u32, mut b: u32) -> u32 {
     }
     a
 }
-fn check() {
+fn main() {
     let num1 = 37;
     let num2 = 11;
     let result = gcd(num1, num2);

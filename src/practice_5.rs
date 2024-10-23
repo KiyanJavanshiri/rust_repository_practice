@@ -2,7 +2,7 @@
 const WIDTH: usize = 30;  
 const HEIGHT: usize = 16; 
 
-fn check_convert() {
+fn main() {
     let mut envelope = String::new();
 
     for i in 0..HEIGHT {

@@ -5,7 +5,7 @@ fn is_palindrome(n: u64) -> bool {
     original == reversed
 }
 
-fn check_pakindrome() {
+fn main() {
     let number = 12321; 
     if is_palindrome(number) {
         println!("{} є паліндромом.", number);

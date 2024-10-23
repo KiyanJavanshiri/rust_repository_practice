@@ -13,7 +13,7 @@ fn is_prime(n: u64) -> bool {
     true
 }
 
-fn check_isPrime() {
+fn main() {
     let number = 30; // Число для перевірки
     if is_prime(number) {
         println!("{} є простим числом.", number);
