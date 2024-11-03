@@ -158,4 +158,165 @@ fn print_char(c: char) {
 
 // * Bool
 // ! 3
+fn main() {
+    let _f: bool = false;
+
+    let t = true;
+    if t {
+        println!("Success!");
+    }
+}
+
+// ! 4
+fn main() {
+    let f = true;
+    let t = true || false; 
+    assert_eq!(t, f);
+
+    println!("Success!");
+}
+
+// * Unit type
+// ! 5
+fn main() {
+    let _v: () = ();
+
+    let v = (); 
+    assert_eq!(v, implicitly_ret_unit());
+
+    println!("Success!");
+}
+
+fn implicitly_ret_unit() {
+    println!("I will return a ()");
+}
+
+// ! 6
+use std::mem::size_of_val;
+
+fn main() {
+    let unit: () = ();
+    assert!(size_of_val(&unit) == 0); 
+
+    println!("Success!");
+}
+
+// ? 4.3 Statements and Expressions
+// ! 1
+fn main() {
+    let v = {
+        let mut x = 1;
+        x += 2;
+        x 
+    };
+ 
+    assert_eq!(v, 3);
+ 
+    println!("Success!");
+ }
+
+// ! 2
+fn main() {
+    let v = {
+        let x = 3;
+        x
+    };
+ 
+    assert!(v == 3);
+ 
+    println!("Success!");
+ }
+
+// ! 3
+fn main() {
+    let s = sum(1, 2);
+    assert_eq!(s, 3);
+
+    println!("Success!");
+}
+
+fn sum(x: i32, y: i32) -> i32 {
+    x + y 
+}
+
+// ? 4.4 Functions
+// ! 1
+fn main() {
+
+    let (x, y) = (1, 2);
+    let s = sum(x, y);
+
+    assert_eq!(s, 3);
+
+    println!("Success!");
+}
+
+fn sum(x: i32, y: i32) -> i32 {
+    x + y 
+}
+
+// ! 2
+fn main() {
+    print();
+ }
+ 
+
+ fn print() -> () {
+    println!("Success!");
+ }
+ 
+// ! 3
+fn main() {
+    never_return();
+
+    println!("Failed!");
+}
+
+fn never_return() -> ! {
+    panic!("This function never returns!");
+}
+
+// * Diverging functions
+// ! 4
+fn main() {
+    println!("Success!");
+}
+
+fn get_option(tp: u8) -> Option<i32> {
+    match tp {
+        1 => {
+            
+            Some(42)
+        }
+        _ => {
+            
+            never_return_fn();
+        }
+    }
+}
+
+fn never_return_fn() -> ! {
+    
+    loop {
+        
+    }
+}
+
+// ! 5
+fn main() {
+  
+    let b = false; 
+
+    let _v = match b {
+        true => 1,
+     
+        false => {
+            println!("Success!");
+            panic!("we have no value for `false`, but we can panic");
+        }
+    };
+
+    println!("Exercise Failed if printing out this line!");
+}
+
 
