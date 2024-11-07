@@ -167,4 +167,5 @@ fn main() {
     foobar("Hello, world!");
     foobar(42); 
 }
+// Тест
 
